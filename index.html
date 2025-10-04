@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Overpower Gym - Dein Fitnessstudio in Frohnleiten</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Header -->
+	<header class="header" id="header">
+		<div class="container">
+			<div class="nav-wrapper">
+				<div class="logo" onclick="scrollToSection('hero')">
+					<img src="logo/Overpower_logo.jpg" alt="Overpower Gym" class="logo-img">
+				</div>
+				
+				<!-- Desktop Navigation -->
+				<nav class="nav-desktop">
+					<button class="nav-btn" onclick="scrollToSection('about')">Über uns</button>
+					<button class="nav-btn" onclick="scrollToSection('offers')">Angebote</button>
+					<button class="nav-btn" onclick="scrollToSection('contact')">Kontakt</button>
+				</nav>
+
+				<!-- Social Media Icons -->
+				<div class="social-icons">
+					<a href="https://www.instagram.com/overpower_gym" target="_blank" rel="noopener noreferrer" class="social-link">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="https://www.facebook.com/overpowergym" target="_blank" rel="noopener noreferrer" class="social-link">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</div>
+
+				<!-- Mobile Menu Button -->
+				<button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+					<i class="fas fa-bars" id="menu-icon"></i>
+				</button>
+			</div>
+
+			<!-- Mobile Menu -->
+			<div class="mobile-menu" id="mobile-menu">
+				<nav class="mobile-nav">
+					<button class="nav-btn-mobile" onclick="scrollToSection('about')">Über uns</button>
+					<button class="nav-btn-mobile" onclick="scrollToSection('offers')">Angebote</button>
+					<button class="nav-btn-mobile" onclick="scrollToSection('contact')">Kontakt</button>
+					
+					<div class="mobile-social">
+						<a href="https://www.instagram.com/overpower_gym" target="_blank" rel="noopener noreferrer" class="social-link">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="https://www.facebook.com/overpowergym" target="_blank" rel="noopener noreferrer" class="social-link">
+							<i class="fab fa-facebook"></i>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="hero" id="hero">
+		<img src="Bilder/hero13.jpg" alt="Fitness Studio" class="hero-img">
+		<div class="hero-content">
+			<div class="container">
+				<h1 class="hero-title">WILLKOMMEN BEI OVERPOWER GYM</h1>
+				<p class="hero-subtitle">Erreiche deine Fitnessziele in unserem modernen Studio mit professioneller Ausstattung</p>
+				<button class="cta-button" onclick="scrollToSection('offers')">
+					Jetzt Mitglied werden
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="about" id="about">
+		<div class="container">
+			<div class="section-header">
+				<h2>Über uns</h2>
+				<p class="section-intro">
+					Das Overpower Gym ist mehr als nur ein Fitnessstudio – es ist dein Ort für Transformation, 
+					Motivation und Erfolg. Mit modernster Ausstattung und einem einzigartigen Ambiente schaffen 
+					wir die perfekte Umgebung für dein Training.
+				</p>
+			</div>
+			
+			<div class="benefits-grid">
+				<div class="benefit-item">
+					<i class="fas fa-dumbbell benefit-icon"></i>
+					<h3>Modernste Studioausstattung</h3>
+					<p>Hochwertige Geräte der neuesten Generation</p>
+				</div>
+				<div class="benefit-item">
+					<i class="fas fa-coffee benefit-icon"></i>
+					<h3>Getränke Bar</h3>
+					<p>Kostenlose Sportgetränke</p>
+				</div>
+				<div class="benefit-item">
+					<i class="fas fa-clock benefit-icon"></i>
+					<h3>24/7 Zugang</h3>
+					<p>Trainiere wann immer du willst</p>
+				</div>
+
+				<div class="benefit-item">
+					<i class="fas fa-shower benefit-icon"></i>
+					<h3>Umkleidekabinen & Duschen</h3>
+					<p>Saubere und moderne Sanitäranlagen</p>
+				</div>
+				<div class="benefit-item">
+					<i class="fas fa-parking benefit-icon"></i>
+					<h3>Kostenlose Parkplätze</h3>
+					<p>Bequeme Anreise mit dem Auto</p>
+				</div>
+				<div class="benefit-item">
+					<i class="fas fa-wifi benefit-icon"></i>
+					<h3>Kostenloses WLAN</h3>
+					<p>Bleib immer connected während dem Training</p>
+				</div>
+				<div class="benefit-item">
+					<i class="fas fa-temperature-full benefit-icon"></i>
+					<h3>Klimaanlage</h3>
+					<p>Angenehme Temperaturen das ganze Jahr</p>
+				</div>
+				<div class="benefit-item">
+					<i class="fas fa-heart benefit-icon"></i>
+					<h3>Cardio Bereich</h3>
+					<p>Modernste Cardio-Geräte für dein Ausdauertraining</p>
+				</div>
+				<div class="benefit-item">
+					<i class="fas fa-weight-hanging benefit-icon"></i>
+					<h3>Freihantel Bereich</h3>
+					<p>Komplette Ausstattung für Krafttraining</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Offers Section -->
+	<section class="offers" id="offers">
+		<div class="container">
+			<div class="section-header">
+				<h2>Unsere Angebote</h2>
+				<p class="section-intro">
+					Wähle das perfekte Mitgliedschaftspaket für deine Bedürfnisse. 
+					Alle Pakete beinhalten Zugang zu allen Bereichen und Geräten.
+				</p>
+			</div>
+			
+			<div class="offers-grid">
+				<div class="offer-card featured">
+					<div class="offer-badge">Beliebt</div>
+					<div class="offer-header">
+						<h3>12 Monats Mitgliedschaft</h3>
+						<div class="price">
+							<span class="amount">30</span>
+							<span class="currency">€/Monat</span>
+						</div>
+						<p class="duration">12 Monate Laufzeit</p>
+					</div>
+					<div class="offer-features">
+						<div class="feature">
+							<i class="fas fa-check"></i>
+							<span>Unbegrenzter Zugang</span>
+						</div>
+						<div class="feature">
+							<i class="fas fa-check"></i>
+							<span>1x Personal Training gratis</span>
+						</div>
+						<div class="feature">
+							<i class="fas fa-check"></i>
+							<span>Getränke gratis</span>
+						</div>
+					</div>
+					<a href="https://www.mysports.com/studio/b3ZlcnBvd2VyLWd5bToxMjEwMDE4OTIw/contract/1210165730/login" target="_blank" rel="noopener noreferrer" class="offer-btn primary">Jetzt anmelden</a>
+				</div>
+
+				<div class="offer-card">
+					<div class="offer-header">
+						<h3>6 Monats Mitgliedschaft</h3>
+						<div class="price">
+							<span class="amount">35</span>
+							<span class="currency">€/Monat</span>
+						</div>
+						<p class="duration">6 Monate Laufzeit</p>
+					</div>
+					<div class="offer-features">
+						<div class="feature">
+							<i class="fas fa-check"></i>
+							<span>Unbegrenzter Zugang</span>
+						</div>
+						<div class="feature">
+							<i class="fas fa-check"></i>
+							<span>1x Personal Training gratis</span>
+						</div>
+						<div class="feature">
+							<i class="fas fa-check"></i>
+							<span>Getränke gratis</span>
+						</div>
+					</div>
+					<a href="https://www.mysports.com/studio/b3ZlcnBvd2VyLWd5bToxMjEwMDE4OTIw/contract/1210165750/login" target="_blank" rel="noopener noreferrer" class="offer-btn">Jetzt anmelden</a>
+				</div>
+
+				<div class="offer-card">
+					<div class="offer-header">
+						<h3>1 Monats Mitgliedschaft</h3>
+						<div class="price">
+							<span class="amount">40</span>
+							<span class="currency">€/Monat</span>
+						</div>
+						<p class="duration">1 Monat Laufzeit</p>
+					</div>
+					<div class="offer-features">
+						<div class="feature">
+							<i class="fas fa-check"></i>
+							<span>Unbegrenzter Zugang</span>
+						</div>
+						<div class="feature">
+							<i class="fas fa-check"></i>
+							<span>1x Personal Training gratis</span>
+						</div>
+						<div class="feature">
+							<i class="fas fa-check"></i>
+							<span>Getränke gratis</span>
+						</div>
+					</div>
+					<a href="https://www.mysports.com/studio/b3ZlcnBvd2VyLWd5bToxMjEwMDE4OTIw/contract/1210921930/login" target="_blank" rel="noopener noreferrer" class="offer-btn">Jetzt anmelden</a>
+				</div>
+			</div>
+			
+			<!-- Offers Note -->
+			<p class="offers-note">
+				Für MM-Karton Mitarbeiter, Pensionisten und Mitglieder von Frohnleitner Sportvereinen gibt es auf die Mitgliedschaft einen Rabatt von 10%. Ein separater Nachweis ist dafür nötig. Bei Vertragsabschluss wird die Zugangskarte für 10€ gekauft. Der Mitgliedsbeitrag ist immer am Monatsanfang fällig. Nach Ablauf der Vertragslaufzeit wird jeweils um 1 weiteres Monat verlängert. Die Kündigungsfrist beträgt 1 Monat.
+			</p>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="section-header">
+				<h2>Kontakt</h2>
+			</div>
+			
+			<div class="contact-content">
+				<div class="contact-card">
+					<div class="contact-block">
+						<h3>Impressum</h3>
+						<p><strong>Overpower Gym</strong></p>
+						<p>Römerpark 1, 8130 Frohnleiten</p>
+					</div>
+
+					<div class="contact-block">
+						<h3>Kontaktdaten</h3>
+						<div class="contact-item">
+							<i class="fas fa-envelope"></i>
+							<a href="mailto:overpowergym@gmail.com">overpowergym@gmail.com</a>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-user"></i>
+							<span>Studioinhaber: Ing. Oliver Präpasser</span>
+						</div>
+					</div>
+
+					<div class="contact-block">
+						<h3>Öffnungszeiten</h3>
+						<div class="opening-hours">
+							<div class="contact-item">
+								<i class="fas fa-clock"></i>
+								<span>24/7 geöffnet</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="map-card">
+					<h3>Unser Standort</h3>
+					<div class="map-container">
+						<iframe 
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.314431135237!2d15.318831876047755!3d47.269107671160896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e256bbde71f41%3A0x244cdb982e06255a!2sOverpower%20Gym!5e0!3m2!1sde!2sat!4v1756312528020!5m2!1sde!2sat"
+							width="100%" 
+							height="400" 
+							style="border:0;" 
+							allowfullscreen="" 
+							loading="lazy" 
+							referrerpolicy="no-referrer-when-downgrade"
+							title="Overpower Gym Standort">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-links">
+					<a href="#about" onclick="scrollToSection('about')">Über uns</a>
+					<a href="#offers" onclick="scrollToSection('offers')">Angebote</a>
+					<a href="#contact" onclick="scrollToSection('contact')">Kontakt</a>
+				</div>
+				<div class="footer-social">
+					<a href="https://www.instagram.com/overpower_gym" target="_blank" rel="noopener noreferrer" class="social-link">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="https://www.facebook.com/overpowergym" target="_blank" rel="noopener noreferrer" class="social-link">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2025 Overpower Gym. Alle Rechte vorbehalten.</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- GSAP Core and Plugins -->
+	<script src="gsap-public/gsap-public/minified/gsap.min.js"></script>
+	<script src="gsap-public/gsap-public/minified/ScrollTrigger.min.js"></script>
+
+	<!-- Your main script (after GSAP) -->
+	<script src="script.js"></script>
+</body>
+</html>
+
